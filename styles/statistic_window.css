@@ -1,0 +1,21 @@
+.statistic_window{
+    border: 3px solid orange; 
+    width: 166px; 
+    padding: 3px 3px 3px 3px
+}
+
+.win_score{
+    float: right
+}
+
+.losse_score{
+    float: right
+}
+
+.all_games{
+    float: right
+}
+
+.balance{
+    float: right
+}

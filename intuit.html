@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+    <head>
+        <link rel="stylesheet" href="styles/trade_window.css">
+        <link rel="stylesheet" href="styles/statistic_window.css">
+        <link rel="stylesheet" href="styles/button_style.css">
+        <link rel="stylesheet" href="styles/trade_result_window.css">
+        <script src="controller/moment.js"></script>
+        <script src="controller/lodash.js"></script>
+        <script src = "controller/intuit.js"></script> 
+        <script src="controller/trade_result_window.js"></script>
+        <title>Move Object</title>
+        <style>
+            
+        </style>
+    </head>
+    <body> 
+        <div class="modal"></div>
+	    <div onclick="intuit.popUp.close()" class="overlay"></div>
+        <div>
+            <div style="width: 285px">
+                <div class = "trade_window" id="trade">
+                    <b>LAST TRADE</b><br>
+                    You <div class = "trade_result" id="trade-result">No deal</div> <br>
+                </div>
+                <br>
+                <div class = "statistic_window" id=statistic>
+                    <b>STATISTIC</b><br>
+                    Win Score: <div class ="win_score" id="win-score"></div> <br>
+                    Losse Score: <div class ="losse_score" id="lose-score"></div><br>
+                    All Games: <div class ="all_games" id="all-score"></div><br>
+                    <hr>
+                    <b>Balance: <div class ="balance" id="balance">1000</div></b><br>
+                </div>
+                <br>
+                <input type="number" id = "time" placeholder="Enter time duration">
+                <input type="number" id = "rate" placeholder="Amount" style="margin-bottom: 20px;"><br>
+
+                <button class = "button_up" onclick="intuit.setTradeEvent(1)">UP</button>
+                <button  class = "button_down"  onclick="intuit.setTradeEvent(0)">DOWN</button><br>
+                <button onclick= "intuit.setTradeHistory()">Trade history</button><br>
+            </div>
+        </div>
+          
+    </body>
+</html>

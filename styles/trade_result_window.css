@@ -1,0 +1,32 @@
+.modal{
+	position: fixed;
+	display: none;
+	border: 3px solid gray;
+    padding: 3px 3px 3px 3px; 
+    width: 166px;
+	margin: 200px 200px 200px 200px;
+	background: #fff;
+	z-index: 1001;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 1000;
+	cursor: pointer;
+}
+
+/* .open{
+	display: block;
+}
+
+.for-callme-popup{
+	display: none;
+} */
